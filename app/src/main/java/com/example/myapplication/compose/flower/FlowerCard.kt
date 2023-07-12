@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapplication.data.Flowers
 import com.example.myapplication.data.FlowersData
+import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.example.myapplication.ui.theme.md_theme_light_background
 import com.example.myapplication.ui.theme.md_theme_light_onPrimaryContainer
 import com.example.myapplication.ui.theme.md_theme_light_onSurfaceVariant
@@ -38,7 +39,7 @@ import com.example.myapplication.ui.theme.md_theme_light_surfaceVariant
 
 @Composable
 private fun FlowerCard(flower: Flowers) {
-    MaterialTheme {
+    MaterialTheme() {
         Surface(
             shape = RoundedCornerShape(14.dp),
             color = md_theme_light_surfaceVariant,

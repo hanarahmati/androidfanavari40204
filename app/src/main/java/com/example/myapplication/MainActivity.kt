@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material3.MaterialTheme
 import androidx.core.view.WindowCompat
 import com.example.myapplication.compose.home.HomeScreen
+import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
-            MaterialTheme {
+            MaterialTheme() {
                 HomeScreen(
                     onAttached = { toolbar ->
                         setSupportActionBar(toolbar)

@@ -49,6 +49,7 @@ import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.layout.ContentScale
+import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.example.myapplication.ui.theme.md_theme_light_onPrimary
 import com.example.myapplication.ui.theme.md_theme_light_onSurface
 import com.example.myapplication.ui.theme.md_theme_light_onSurfaceVariant
@@ -57,7 +58,7 @@ import com.example.myapplication.ui.theme.md_theme_light_tertiaryContainer
 
 @Composable
 fun LoginScreen(openDashboard: () -> Unit) {
-    MaterialTheme {
+    MaterialTheme() {
         ConstraintLayout {
             val (image, loginForm) = createRefs()
 

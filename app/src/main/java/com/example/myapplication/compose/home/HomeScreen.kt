@@ -33,6 +33,7 @@ import com.example.myapplication.compose.plantList.PlantListScreen
 import com.example.myapplication.data.Plant
 import com.example.myapplication.data.PlantsData
 import com.example.myapplication.databinding.HomeScreenBinding
+import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.example.myapplication.ui.theme.md_theme_light_secondary
 import com.example.myapplication.ui.theme.md_theme_light_surfaceVariant
 import com.google.android.material.appbar.MaterialToolbar
@@ -143,7 +144,7 @@ fun HomePagerScreen(
 private fun HomeScreenPreview(
     @PreviewParameter(HomeScreenPreviewParamProvider::class) param: HomePreviewParam
 ) {
-    MaterialTheme {
+    MaterialTheme() {
         HomePagerScreen(
             onPlantClick = {},
             onPageChange = {},
